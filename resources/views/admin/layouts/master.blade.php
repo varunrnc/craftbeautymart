@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--favicon-->
-    <!-- <link rel="shortcut icon" href="{{ asset('public/favicon.ico') }}" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{ asset('public/assets/images/favicon.ico') }}" type="image/x-icon" />
 
     <title>@yield('title')</title>
 

@@ -40,8 +40,6 @@
                 </li>
                 <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Brands</a>
                 </li>
-                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Units</a>
-                </li>
                 <li> <a href="#"><i class='bx bx-radio-circle'></i>Product List</a>
                 </li>
             </ul>

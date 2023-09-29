@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Hindustan Agency')
+@section('title', 'Craft Beauty Mart')
 
 @section('main-content')
 
@@ -7,11 +7,11 @@
     <div class="container-fluid">
         <!--breadcrumb-->
         <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">Hindustan Agency</div>
+            <div class="breadcrumb-title pe-3">Craft Beauty Mart</div>
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bi bi-house-door"></i></a>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}"><i class="bi bi-house-door"></i></a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Shop</li>
                     </ol>

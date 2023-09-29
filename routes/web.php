@@ -36,4 +36,6 @@ Route::prefix('admin')->group(function () {
         Route::post('/login', 'login')->name('login');
         Route::post('/logout', 'logout')->name('logout');
     });
+
+    
 });
