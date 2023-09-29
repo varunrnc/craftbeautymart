@@ -4,11 +4,9 @@ namespace App\Http\Controllers\Admin\Product;
 
 use App\Helper\ApiRes;
 use App\Http\Controllers\Controller;
-use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductImg;
-use App\Models\Unit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
@@ -18,9 +16,7 @@ class AdminProductController extends Controller
     public function index()
     {
         $category = Category::all();
-        $brand = Brand::all();
-        $unit = Unit::all();
-        return view('admin.product.create', compact('category', 'brand', 'unit'));
+        return view('admin.product.create', compact('category'));
     }
 
     public function product()
@@ -53,8 +49,6 @@ class AdminProductController extends Controller
         $product->selling_price = $req->selling_price;
         $product->discount = $req->discount;
         $product->category = $req->category;
-        $product->brand = $req->brand;
-        $product->unit = $req->unit;
         $product->status = $req->status;
         $status = $product->save();
 
@@ -138,9 +132,7 @@ class AdminProductController extends Controller
     {
         $product = Product::Where('id', $req->id)->with('imgmd')->first();
         $category = Category::all();
-        $brand = Brand::all();
-        $unit = Unit::all();
-        return view('admin.product.edit', compact('product', 'category', 'brand', 'unit'));
+        return view('admin.product.edit', compact('product', 'category'));
     }
 
 
@@ -163,8 +155,6 @@ class AdminProductController extends Controller
         $product->selling_price = $req->selling_price;
         $product->discount = $req->discount;
         $product->category = $req->category;
-        $product->brand = $req->brand;
-        $product->unit = $req->unit;
         $product->status = $req->status;
         $status = $product->update();
 

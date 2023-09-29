@@ -37,5 +37,20 @@ Route::prefix('admin')->group(function () {
         Route::post('/logout', 'logout')->name('logout');
     });
 
-    
+    Route::controller((AdminProductController::class))->group(function () {
+        Route::get('/product/create', 'index')->name('product.create');
+        Route::post('/product/save', 'save')->name('product.save');
+        Route::get('/product/table', 'product')->name('product.table');
+        Route::post('/product/status', 'status');
+        Route::get('/product/edit/{id}', 'edit')->name('product.edit');
+        Route::post('/product/edit', 'update')->name('product.update');
+        Route::post('/product/delete', 'deleteProduct');
+    });
+
+    Route::controller(AdminCategoryController::class)->group(function () {
+        Route::get('/category', 'index')->name('category');
+        Route::post('/category/add', 'save')->name('category.add');
+        Route::post('/category/status', 'status');
+        Route::post('/category/delete', 'deleteCategory');
+    });
 });

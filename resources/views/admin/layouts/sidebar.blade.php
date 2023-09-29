@@ -36,9 +36,7 @@
                 <div class="menu-title">Producs</div>
             </a>
             <ul>
-                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Categories</a>
-                </li>
-                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Brands</a>
+                <li> <a href="{{route('category')}}"><i class='bx bx-radio-circle'></i>Product Categories</a>
                 </li>
                 <li> <a href="#"><i class='bx bx-radio-circle'></i>Product List</a>
                 </li>
@@ -92,6 +90,7 @@
             </a>
         </li> --}}
 
+        
 
     </ul>
     <!--end navigation-->
