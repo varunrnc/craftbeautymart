@@ -15,14 +15,16 @@ class AdminProductController extends Controller
 {
     public function index()
     {
-        $category = Category::all();
-        return view('admin.product.create', compact('category'));
+        // $category = Category::all();
+        // return view('admin.product.create', compact('category'));
+        return view('admin.product.create');
     }
 
     public function product()
     {
-        $products = Product::latest()->with('img')->get();
-        return view('admin.product.product', compact('products'));
+        // $products = Product::latest()->with('img')->get();
+        // return view('admin.product.product', compact('products'));
+        return view('admin.product.product');
     }
 
     public function save(Request $req)

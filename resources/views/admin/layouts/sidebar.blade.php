@@ -38,7 +38,7 @@
             <ul>
                 <li> <a href="{{route('category')}}"><i class='bx bx-radio-circle'></i>Product Categories</a>
                 </li>
-                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product List</a>
+                <li> <a href="{{route('product.table')}}"><i class='bx bx-radio-circle'></i>Product List</a>
                 </li>
             </ul>
         </li>
