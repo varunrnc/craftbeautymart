@@ -4,7 +4,7 @@
             <img src="{{asset('public/assets/admin/assets/images/logo-icon.png')}}" class="logo-icon" alt="logo icon">
         </div>
         <div>
-            <a href="{{route('dashboard')}}"><h4 class="logo-text">HA</h4></a>
+            <a href="{{route('dashboard')}}"><h4 class="logo-text"></h4></a>
         </div>
         <div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
         </div>
@@ -36,13 +36,13 @@
                 <div class="menu-title">Producs</div>
             </a>
             <ul>
-                <li> <a href="{{route('category')}}"><i class='bx bx-radio-circle'></i>Product Categories</a>
+                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Categories</a>
                 </li>
-                <li> <a href="{{route('brand')}}"><i class='bx bx-radio-circle'></i>Product Brands</a>
+                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Brands</a>
                 </li>
-                <li> <a href="{{route('unit')}}"><i class='bx bx-radio-circle'></i>Product Units</a>
+                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product Units</a>
                 </li>
-                <li> <a href="{{route('product.table')}}"><i class='bx bx-radio-circle'></i>Product List</a>
+                <li> <a href="#"><i class='bx bx-radio-circle'></i>Product List</a>
                 </li>
             </ul>
         </li>

@@ -20,8 +20,6 @@
                         </a>
                     </li>
 
-
-
                     <li class="nav-item dropdown dropdown-app">
                         <div class="dropdown-menu dropdown-menu-end p-0">
                             <div class="app-container p-2 my-2">

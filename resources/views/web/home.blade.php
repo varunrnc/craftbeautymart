@@ -34,13 +34,13 @@
         <hr>
         <div class="top-specials">
             <div class="top-item owl-carousel">
-                @foreach ($products as $product)
+
                 <div class="item m-2">
                     <div class="card">
                         <div class="product-card p-2">
                             <div class="img-box">
                                 <a href="{{ route('product.view') }}">
-                                    <img src="{{ url('/') . '/' . $product->img->image }}" alt="product" class="img-fluid product-item-img">
+                                    <img src="{{ asset('public/assets/images/product-imgs/eltamd.jpg') }}" alt="product" class="img-fluid product-item-img">
                                 </a>
                             </div>
                             <div>
@@ -48,7 +48,7 @@
                                     <span class=""><i class="bi bi-heart font-26"></i></span>
                                 </div>
                                 <div class="position-absolute top-0 start-0">
-                                    <p class="text-white p-1 bg-danger"><strong>{{$product->discount}}%</strong> Off</p>
+                                    <p class="text-white p-1 bg-danger"><strong>12%</strong> Off</p>
                                 </div>
                             </div>
                             <div class="content-box">
@@ -61,15 +61,16 @@
                                         <i class="bi bi-star text-secondary"></i>
                                     </div>
                                 </div>
+                                <small>EltaMD</small>
                                 <a href="{{ route('product.view') }}" class="product-title">
-                                    <p>{{Str::limit($product->title, 28)}}</p>
+                                    <p>UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone...</p>
                                 </a>
                                 <div class="clearfix">
                                     <p class="mb-0 float-start">
-                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">₹
-                                            {{$product->regular_price}}</span>
-                                        <span class="fw-bold font-18 font-mb-14 text-head">₹
-                                            {{$product->selling_price}}</span>
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$50.29
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$42.32
+                                           </span>
                                     </p>
                                 </div>
                                 <div class="text-center my-2">
@@ -77,16 +78,218 @@
                                         <div class="pretext">
                                             <i class="bi bi-cart-plus-fill"></i> ADD TO CART
                                         </div>
-                                        <div class="pretext done">
-                                            <div class="posttext"><i class="bi bi-check-circle-fill"></i> ADDED</div>
-                                        </div>
+                                        
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/estee.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger">Recommended</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Estee Lauder</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Advanced Night Repair Synchronized Multi...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$13.00
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$10.15
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/estee2.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger"><strong>15%</strong> Off</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Estee Lauder</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Age Smart MultiVitamin Power Recovery...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$45.29
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$38.10
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/lanoome.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger">Popular</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Lanoome</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Tonique Confort Toner 50ml/1.69oz</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$7.13
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$5.87
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/peter.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger"><strong>12%</strong> Off</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Peter Thomas Roth</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Peter Thomas Roth Instant Firmx Temporary Eye...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$65.48
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$57.25
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -98,17 +301,17 @@
     <div class="container">
         <h5>Most Popular</h5>
         <hr>
-        <img src="{{ asset('public/assets/images/banner/banner1.jpg') }}" alt="banner" class="img-fluid">
+        <img src="{{ asset('public/assets/images/banner/beautycraftslider1.webp') }}" alt="banner" class="img-fluid">
 
         <div class="top-specials">
             <div class="top-item owl-carousel">
-                @foreach ($products as $product)
+
                 <div class="item m-2">
                     <div class="card">
                         <div class="product-card p-2">
                             <div class="img-box">
                                 <a href="{{ route('product.view') }}">
-                                    <img src="{{ url('/') . '/' . $product->img->image }}" alt="product" class="img-fluid product-item-img">
+                                    <img src="{{ asset('public/assets/images/product-imgs/product.jpg') }}" alt="product" class="img-fluid product-item-img">
                                 </a>
                             </div>
                             <div>
@@ -116,7 +319,7 @@
                                     <span class=""><i class="bi bi-heart font-26"></i></span>
                                 </div>
                                 <div class="position-absolute top-0 start-0">
-                                    <p class="text-white p-1 bg-danger"><strong>{{$product->discount}}%</strong> Off</p>
+                                    <p class="text-white p-1 bg-danger"><strong>12%</strong> Off</p>
                                 </div>
                             </div>
                             <div class="content-box">
@@ -129,15 +332,16 @@
                                         <i class="bi bi-star text-secondary"></i>
                                     </div>
                                 </div>
+                                <small>UN Jardin</small>
                                 <a href="{{ route('product.view') }}" class="product-title">
-                                    <p>{{Str::limit($product->title, 28)}}</p>
+                                    <p>UnJardin Sur Le Nil Hermes Perfume - a fragrance...</p>
                                 </a>
                                 <div class="clearfix">
                                     <p class="mb-0 float-start">
-                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">₹
-                                            {{$product->regular_price}}</span>
-                                        <span class="fw-bold font-18 font-mb-14 text-head">₹
-                                            {{$product->selling_price}}</span>
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$35.47
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$30.24
+                                           </span>
                                     </p>
                                 </div>
                                 <div class="text-center my-2">
@@ -145,16 +349,223 @@
                                         <div class="pretext">
                                             <i class="bi bi-cart-plus-fill"></i> ADD TO CART
                                         </div>
-                                        <div class="pretext done">
-                                            <div class="posttext"><i class="bi bi-check-circle-fill"></i> ADDED</div>
-                                        </div>
+                                        
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
+
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/peter.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger"><strong>12%</strong> Off</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Peter Thomas Roth</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Peter Thomas Roth Instant Firmx Temporary Eye...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$65.48
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$57.25
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/estee2.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger"><strong>15%</strong> Off</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Estee Lauder</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Age Smart MultiVitamin Power Recovery...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$45.29
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$38.10
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/lanoome.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger">Popular</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Lanoome</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Tonique Confort Toner 50ml/1.69oz</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$7.13
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$5.87
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/estee.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger">Recommended</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Estee Lauder</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Advanced Night Repair Synchronized Multi...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$13.00
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$10.15
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -230,7 +641,7 @@
 
 <section>
     <div class="container">
-        <img src="{{ asset('public/assets/images/banner/banner2.jpg') }}" alt="banner" class="img-fluid">
+        <img src="{{ asset('public/assets/images/banner/beautycraftslider2.webp') }}" alt="banner" class="img-fluid">
     </div>
 </section>
 
@@ -244,13 +655,13 @@
 
         <div class="top-specials">
             <div class="top-item owl-carousel">
-                @foreach ($products as $product)
+
                 <div class="item m-2">
                     <div class="card">
                         <div class="product-card p-2">
                             <div class="img-box">
                                 <a href="{{ route('product.view') }}">
-                                    <img src="{{ url('/') . '/' . $product->img->image }}" alt="product" class="img-fluid product-item-img" title="{{$product->title}}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/eltamd.jpg') }}" alt="product" class="img-fluid product-item-img">
                                 </a>
                             </div>
                             <div>
@@ -258,7 +669,7 @@
                                     <span class=""><i class="bi bi-heart font-26"></i></span>
                                 </div>
                                 <div class="position-absolute top-0 start-0">
-                                    <p class="text-white p-1 bg-danger"><strong>{{$product->discount}}%</strong> Off</p>
+                                    <p class="text-white p-1 bg-danger"><strong>12%</strong> Off</p>
                                 </div>
                             </div>
                             <div class="content-box">
@@ -271,15 +682,16 @@
                                         <i class="bi bi-star text-secondary"></i>
                                     </div>
                                 </div>
+                                <small>EltaMD</small>
                                 <a href="{{ route('product.view') }}" class="product-title">
-                                    <p>{{Str::limit($product->title, 28)}}</p>
+                                    <p>UV Clear Facial Sunscreen SPF 46 - For Skin Types Prone...</p>
                                 </a>
                                 <div class="clearfix">
                                     <p class="mb-0 float-start">
-                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">₹
-                                            {{$product->regular_price}}</span>
-                                        <span class="fw-bold font-18 font-mb-14 text-head">₹
-                                            {{$product->selling_price}}</span>
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$50.29
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$42.32
+                                           </span>
                                     </p>
                                 </div>
                                 <div class="text-center my-2">
@@ -287,16 +699,218 @@
                                         <div class="pretext">
                                             <i class="bi bi-cart-plus-fill"></i> ADD TO CART
                                         </div>
-                                        <div class="pretext done">
-                                            <div class="posttext"><i class="bi bi-check-circle-fill"></i> ADDED</div>
-                                        </div>
+                                        
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/estee.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger">Recommended</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Estee Lauder</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Advanced Night Repair Synchronized Multi...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$13.00
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$10.15
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/estee2.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger"><strong>15%</strong> Off</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Estee Lauder</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Age Smart MultiVitamin Power Recovery...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$45.29
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$38.10
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/lanoome.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger">Popular</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Lanoome</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Tonique Confort Toner 50ml/1.69oz</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$7.13
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$5.87
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item m-2">
+                    <div class="card">
+                        <div class="product-card p-2">
+                            <div class="img-box">
+                                <a href="{{ route('product.view') }}">
+                                    <img src="{{ asset('public/assets/images/product-imgs/peter.jpg') }}" alt="product" class="img-fluid product-item-img">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="position-absolute top-0 end-0 m-3 ">
+                                    <span class=""><i class="bi bi-heart font-26"></i></span>
+                                </div>
+                                <div class="position-absolute top-0 start-0">
+                                    <p class="text-white p-1 bg-danger"><strong>12%</strong> Off</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <div class="d-flex align-items-center mt-3 rating">
+                                    <div class="cursor-pointer mx-auto">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <small>Peter Thomas Roth</small>
+                                <a href="{{ route('product.view') }}" class="product-title">
+                                    <p>Peter Thomas Roth Instant Firmx Temporary Eye...</p>
+                                </a>
+                                <div class="clearfix">
+                                    <p class="mb-0 float-start">
+                                        <span class="me-2 text-decoration-line-through text-danger font-mb-12">$65.48
+                                            </span>
+                                        <span class="fw-bold font-18 font-mb-14 text-head">$57.25
+                                           </span>
+                                    </p>
+                                </div>
+                                <div class="text-center my-2">
+                                    <button class="addtocart">
+                                        <div class="pretext">
+                                            <i class="bi bi-cart-plus-fill"></i> ADD TO CART
+                                        </div>
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

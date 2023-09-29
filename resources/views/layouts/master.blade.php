@@ -274,7 +274,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
-                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
                         <div class="bg-white p-3 rounded-circle text-center" style="width: 50px; height: 50px;">
                             <span class="text-dark font-30 fw-bold" style="line-height: 20px;">2</span>
                         </div>
@@ -285,7 +285,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
-                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
                         <div class="bg-white p-3 rounded-circle text-center" style="width: 50px; height: 50px;">
                             <span class="text-dark font-30 fw-bold" style="line-height: 20px;">3</span>
                         </div>
@@ -297,8 +297,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
                     <div class="d-flex align-items-center">
-                        <img src="{{ asset('public/assets/images/main-girl.png') }}" alt="icon" class="img-fluid pe-3">
-                        
+                        <img src="{{ asset('public/assets/images/main-girl.png') }}" alt="icon" class="img-fluid pe-3" style="height: 125px;">
                     </div>
                 </div>
             </div>
@@ -320,7 +319,10 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><hr></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li>
+                            <hr>
+                        </li>
                         <li><a href="#">Privacy and Security</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">User Agreement</a></li>
@@ -345,7 +347,7 @@
                         <li><a href="#">Hair Car</a></li>
                         <li><a href="#">Perfumes</a></li>
                         <li><a href="#">For Kids</a></li>
-                        <li><a href="#">Wellness</a></li>                        
+                        <li><a href="#">Wellness</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
